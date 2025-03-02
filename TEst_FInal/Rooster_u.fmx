@@ -1,0 +1,114 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Main'
+  ClientHeight = 482
+  ClientWidth = 286
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object pnlBackground: TPanel
+    Align = Contents
+    Size.Width = 286.000000000000000000
+    Size.Height = 482.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'panelstyle'
+    TabOrder = 0
+    object tTimeStartPicker: TTimeEdit
+      Time = 0.333333333333333300
+      OnChange = tTimeStartPickerChange
+      Align = Scale
+      Position.X = 26.793766021728520000
+      Position.Y = 51.809055328369140000
+      Size.Width = 112.916473388671900000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object tTimeEndPicker: TTimeEdit
+      Time = 0.364583333333333300
+      OnChange = tTimeEndPickerChange
+      Align = Scale
+      Position.X = 26.793766021728520000
+      Position.Y = 119.631706237793000000
+      Size.Width = 112.916473388671900000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object btnSubmit: TButton
+      Align = Scale
+      Position.X = 175.573394775390600000
+      Position.Y = 21.293188095092770000
+      Size.Width = 82.677581787109380000
+      Size.Height = 43.554214477539060000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Submit'
+      TextSettings.Trimming = None
+      OnClick = btnSubmitClick
+    end
+    object TimeOutput: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Scale
+      Enabled = False
+      Position.X = 26.638767242431640000
+      Position.Y = 230.405120849609400000
+      Size.Width = 231.853851318359400000
+      Size.Height = 191.673065185546900000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Viewport.Width = 223.900000000000000000
+      Viewport.Height = 183.700000000000000000
+    end
+    object LabelStart: TLabel
+      Align = Scale
+      Position.X = 26.793766021728520000
+      Position.Y = 21.665571212768550000
+      Size.Width = 76.553375244140630000
+      Size.Height = 22.607553482055660000
+      Size.PlatformDefault = False
+      Text = 'Start time'
+      TabOrder = 5
+    end
+    object LabelEnd: TLabel
+      Align = Scale
+      Position.X = 27.027517318725590000
+      Position.Y = 89.121765136718750000
+      Size.Width = 76.422454833984380000
+      Size.Height = 23.031562805175780000
+      Size.PlatformDefault = False
+      StyleLookup = 'lblEndTimeStyle1'
+      Text = 'EndTime'
+      TabOrder = 6
+    end
+    object cbxPLength: TCheckBox
+      Align = Scale
+      Position.X = 175.573394775390600000
+      Position.Y = 131.630462646484400000
+      Size.Width = 83.606323242187500000
+      Size.Height = 18.389511108398440000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'Periods'
+    end
+    object Button1: TButton
+      Align = Scale
+      Position.X = 176.000000000000000000
+      Position.Y = 73.000000000000000000
+      Size.Width = 83.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Cancel'
+      TextSettings.Trimming = None
+      OnClick = BtnCancelClick
+    end
+  end
+  object NotificationCenter: TNotificationCenter
+    Left = 220
+    Top = 452
+  end
+end
