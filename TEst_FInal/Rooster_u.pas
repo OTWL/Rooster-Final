@@ -52,6 +52,7 @@ procedure TForm1.BtnCancelClick(Sender: TObject);
 begin
   NotificationCenter.CancelAll;
   ShowMessage('Notifications canceled');
+  NotificationCenter.PresentNotification(NotificationCenter.CreateNotification('Cancel','Notifications have been cleared',Now));
   TimeOutput.Lines.Clear;
 end;
 
@@ -84,7 +85,7 @@ begin
       Continue;
     end;
 
-    aNotiTime[i] := aTime[i + 1] - Time;
+    aNotiTime[i] := aTime[i + 1];
     TimeOutput.Lines.add(timetostr(aNotiTime[i]) + 'Notification: ' +
       IntToStr(i));
   end;
@@ -130,7 +131,6 @@ begin
   MyNotification[1] := NotificationCenter.CreateNotification('Succes',
     'Times have been added and notifications will be pushed throughout the day',
     now);
-  MyNotification[1].FireDate := now;
   NotificationCenter.PresentNotification(MyNotification[1]);
   // Schedule all notifications
   i := 1;

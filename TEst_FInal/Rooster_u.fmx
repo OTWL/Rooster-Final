@@ -53,7 +53,7 @@ object Form1: TForm1
       Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
       DataDetectorTypes = []
       Align = Scale
-      Enabled = False
+      Locked = True
       Position.X = 26.638767242431640000
       Position.Y = 230.405120849609400000
       Size.Width = 231.853851318359400000
