@@ -8,7 +8,7 @@ A **Delphi FireMonkey** application that schedules and manages time-based notifi
 
 ---
 ## 📜 Documentaion link
- https://app.gitbook.com/invite/zD7siVq440AZ6kPS2NaM/XzN2DguEDMHGkYMVC4tG
+None
  
 ---
 
@@ -92,4 +92,5 @@ This project is **MIT Licensed**. Feel free to use, modify, and distribute it.
 ---
 
 ## 📬 Contact  
-🔗 **OTWL:** [github.com/yourusername](https://github.com/OTWL)  
+🔗 **OTWL:** [github.com/OTWL](https://github.com/OTWL) <br />
+🔗 **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/christian-h-23869b28b/)
